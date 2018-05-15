@@ -1,0 +1,11 @@
+num=input("enter number: ")
+if num>1:
+   for divisor in range(2,(num**0.5)+1):
+	    if (num%divisor)==0 :
+		print (num," is not prime")
+		break
+   else:
+	print(num," is not a prime")	
+
+else:
+    print(num," is not a prime")
