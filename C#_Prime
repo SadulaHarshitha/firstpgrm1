@@ -1,0 +1,20 @@
+using System;
+public class PrimeNumber
+{
+	public static void Main(string args[])
+	{
+		int num=Convert.Toint32(Console.ReadLine());
+		int div;
+		for(div=0;div<=(Math.Sqrt(num));div++)
+		{
+			if(num%div==0)
+			{
+				Console.WriteLine("Number is not prime");
+			}
+		}
+		if(div>Math.Sqrt(num))
+		{
+			Console.WriteLine("Number is prime");
+		}
+	}
+} 
