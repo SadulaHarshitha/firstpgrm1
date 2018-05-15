@@ -1,7 +1,6 @@
 using System;
 public class PrimeNumber
 {
-	enum 
 	public static void Main(string args[])
 	{
 		int num=Convert.Toint32(Console.ReadLine());
