@@ -4,17 +4,24 @@ public class PrimeNumber
 	public static void Main(string args[])
 	{
 		int num=Convert.Toint32(Console.ReadLine());
-		int div;
-		for(div=0;div<=(Math.Sqrt(num));div++)
+		int div,k=0;
+		if(num>1)
 		{
-			if(num%div==0)
+			for(div=2;div<=(Math.Sqrt(num));div++)
 			{
-				Console.WriteLine("Number is not prime");
+				if(num%div==0)
+				{
+				  Console.WriteLine("Number is not prime");
+				  k=k+1;
+				  break;
+				}
+			}
+			if(k==0)
+			{
+				Console.WriteLine("Number is prime");
 			}
 		}
-		if(div>Math.Sqrt(num))
-		{
-			Console.WriteLine("Number is prime");
-		}
+		else
+		    Console.WriteLine("Number is not prime"); 
 	}
 } 
