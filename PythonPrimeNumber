@@ -1,11 +1,13 @@
 num=input("enter number: ")
+k=0
 if num>1:
    for divisor in range(2,(num**0.5)+1):
 	    if (num%divisor)==0 :
 		print (num," is not prime")
+		k=k+1
 		break
-   else:
-	print(num," is not a prime")	
+   if(k==0)
+	print(num," is a prime")	
 
 else:
     print(num," is not a prime")
